@@ -49,19 +49,19 @@ function select(message)
 </html>
 )=====";
 
-void Draw();
-bool judge_bound();
-void Rotate();
-bool AutoMove(void *);
-bool judge_finish();
-void right();
-void left();
-void Convert(int * new_x,int *new_y);
-void handleRoot();
-void game_over();
-void summon();
-void clear();
-void init();
+void Draw();//绘图
+bool judge_bound();//判断边界
+void Rotate();//方块旋转函数
+bool AutoMove(void *);//自动移动
+bool judge_finish();//判断此块是否完成
+void right();//右
+void left();//左
+void Convert(int * new_x,int *new_y);//转换，及方块下移，和Draw()函数通信
+void handleRoot();//web服务器
+void game_over();//判断游戏结束
+void summon();//生成新块
+void clear();//清除已完成的一行
+void init();//初始化
 
 void setup() 
 {
